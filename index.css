@@ -1,0 +1,270 @@
+body {
+	background-image: url(body_3-min.jpg);
+	background-size: auto;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	line-height: 1.6;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	color: #fff;
+	height: 100vh;
+	margin: 0px auto; 
+}
+
+p{
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+	padding: 0;
+	margin: auto;
+}
+
+h2 {
+	margin: 5px auto;
+}
+
+.scroll {
+	position: fixed;
+	width: 100%;
+	height: 88%;
+	overflow: auto;
+}
+::-webkit-scrollbar { width:0;}
+
+*,
+*:before
+*:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*--------------container-----------------*/
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	max-height: 100px;
+}
+
+.Name_blog {
+	font-family: 'Kanit', sans-serif;
+	font-size: 30px;
+	color: #fff;
+	max-height: 100px;
+}
+.Name_blog_logo {
+	width: 100px;
+	max-height: 100px;
+}
+
+/*header
+-----------------------------------------*/
+.header {
+	max-height: 100px;
+}
+
+.header_inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: top;
+	max-height: 100px;
+	border-bottom: 2px solid #fff;
+}
+
+.header_inner_name {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: top;
+	max-height: 100px;
+}
+
+/*nav
+------------------------------------------*/
+.nav {
+	font-size: 14px;
+	text-transform: uppercase;
+	max-height: 100px;
+}
+
+.nav_link {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 10px;
+	font-size: 25px;
+	position: relative;
+	color: #fff;
+	text-decoration: none;
+	transition: color .35s linear;
+	word-spacing: 5px;
+	max-height: 100px;
+}
+
+
+.nav_link:hover {
+	color: #9900e0;
+	text-decoration: none;
+}
+
+.nav_link:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 3px;
+	display: none;
+	background-color: #9900e0;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+}
+
+.nav_link:hover:after {
+	display: block;
+}
+
+/*-----------Выплывающее меню-------------*/
+
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	padding-top: 15px;
+}
+
+.dropdown-content a {
+    color: #9900e0;
+    padding: 12px 5px 12px 20px;
+	margin: 0px;
+    text-decoration: none;
+    display: block;
+	border-bottom: 1px solid rgba(108, 108, 108, 0.362);
+	background-color: #000;
+}
+
+.dropdown-content a:hover {background-color: rgba(107, 107, 107, 0.278);}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+/*-----------Стена страницы-------------*/
+.blog {
+	background-color: rgba(84, 84, 84, 0.735);
+	height: auto;
+	min-height: 100%;
+	width: 75%;
+	min-width: 1000px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.asked {
+	text-align: center;
+	font-size: 25px;
+	vertical-align: top;
+	height: auto;
+	max-height: 200px;
+	margin: 25 auto 0 auto;
+	padding: 20 auto;
+}
+
+.answers {
+	text-align: center;	
+	margin: 0 auto;
+	padding: 15 auto;
+	border-bottom: 2px solid #fff;
+}
+
+.htps {
+	color: #fff;
+	text-decoration: none;
+}
+
+.htps:hover {
+	color: #9900e0;
+	text-decoration: none;
+}
+
+.image {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: top;
+}
+
+.image_left {
+	width: 50%;
+}
+
+.image_game_log {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+	border-radius: 10%;
+	border: 2px solid #9900e0;
+	box-shadow: 0px 10px 5px 10px #9900e06a;
+}
+
+.image_right {
+	width: 50%;
+}
+
+.bot_down {
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.button_down {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+	color: #fff;
+	font-size: 60px;
+	text-decoration: none;
+	user-select: none;
+	background: linear-gradient(#cc00ff5a, #5700af5a) #5716e357;
+	padding: 20px 40px;
+	border-radius: 12px;
+}
+
+.button:hover {
+	background: linear-gradient(#cc00ff, #5700af) #5716e3;
+}
+.button:active {
+	background: linear-gradient(#5700af, #cc00ff ) #cc00ff;
+}
+
+.circle_text {
+	border-radius: 40%;
+}
